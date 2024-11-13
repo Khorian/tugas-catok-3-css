@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas catok 3 html css</title>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+    
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #55d117;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+    
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(1, 131, 11, 0.1);
+            background-color: #e3edc0;
+            margin-top: 20px;
+        }
+
+      
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        
+        .profile-img {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .profile-img img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+      
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #111110;
+            text-align: center;
+        }
+        th {
+            background-color: #55d117;
+            color: #0d0d0d;
+        }
+
+      
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        ul li {
+            background-color: #55d117;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+       
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#biodata">Biodata</a>
+        <a href="#pendidikan">Riwayat Pendidikan</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#kemampuan">Kemampuan</a>
+    </div>
+
+    <!-- Kontainer utama -->
+    <div class="container">
+        
+        <!-- Bagian Biodata -->
+        <section id="biodata">
+            <h1>BIODATA</h1>
+            <div class="profile-img">
+                <img src="khorian.jpeg" alt="Foto Khorian Mukhsin">
+            </div>
+            <div class="profile-section">
+                <h2>Khorian Mukhsin</h2>
+                <h2>123140006</h2>
+                <h3>No WhatsApp : 085664393119</h3>
+                <h3>Instagram : <a href="https://www.instagram.com/rylx_r?igsh=c2o3bGo2dW9mb3hv">@rylx_r</a></h3>
+                <h3>Email : <a href="mailto:khorian.123140006@student.itera.ac.id" target="_blank">khorian.123140006@student.itera.ac.id</a></h3>
+            </div>
+            <br>
+            <h3>Tentang Saya</h3>
+            <p>Saya adalah seorang lulusan SMK dengan jurusan Teknik Komputer dan Jaringan yang saat ini sedang menempuh pendidikan di Institut Teknologi Sumatera, program studi Teknik Informatika. Memiliki pribadi yang ambisius dan memiliki semangat tinggi dalam mengejar tujuan akademis maupun pribadi. Berbekal latar belakang kejuruan,saya memiliki keahlian teknis yang kuat, terutama dalam bidang jaringan komputer. Tidak hanya itu, saya juga selalu bersemangat mencoba hal-hal baru, terutama yang berkaitan dengan teknologi dan inovasi, sehingga mampu memperluas pengetahuannya secara praktis dan teoretis. Sikap kreatif yang dimiliki membuat saya mampu berpikir kreatif dan menghasilkan solusi yang unik.  Selain itu, saya terus berusaha mengembangkan kemampuan dan siap menghadapi tantangan di dunia teknologi yang terus berkembang.</p>
+        </section>
+
+        <!-- Bagian Riwayat Pendidikan -->
+        <section id="pendidikan">
+            <h3>Riwayat Pendidikan</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tahun</th>
+                        <th>Sekolah</th>
+                        <th>Jurusan/Prodi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2020-2023</td>
+                        <td>SMKN 1 Menggala</td>
+                        <td>TKJ</td>
+                    </tr>
+                    <tr>
+                        <td>2024-2027</td>
+                        <td>Institut Teknologi Sumatera</td>
+                        <td>Teknik Informatika</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Bagian Pengalaman -->
+        <section id="pengalaman">
+            <h3>Pengalaman</h3>
+            <table>
+                <tr>
+                    <td>Jan 2022 Praktik Kerja Lapangan</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Bagian Kemampuan -->
+        <section id="kemampuan">
+            <h3>Kemampuan</h3>
+            <ul>
+                <li>C++</li>
+                <li>Dasar Bahasa Inggris</li>
+                <li>Basic Networking</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
